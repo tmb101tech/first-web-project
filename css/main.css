@@ -1,0 +1,98 @@
+/* style goes there. */
+
+body {
+	background: #666;
+	color: #fff;
+	font-family: arial;
+
+}
+
+a { 
+	color: #fff;
+	text-decoration: none;
+}
+
+ul {
+	padding: 0;
+}
+
+#container {
+	background: #333;
+	width: 960px;
+	margin: 30px auto;
+	overflow: hidden;
+	padding: 10px;
+}
+
+nav {
+	height: 40px;
+	background: #666;
+}
+
+nav li {
+	list-style: none;
+	float: left;
+	padding-right: 20px;
+}
+
+nav ul {
+	padding-top: 13px;
+	padding-left: 10px;
+}
+
+main {
+	float: left;
+	width: 60%;
+}
+
+aside {
+	float: right;
+	width: 30%;
+	background: #666;
+	margin-top: 3%;
+	padding-top: 10px;
+}
+
+.clr {
+	clear: both;
+}
+
+footer {
+	text-align: center;
+	padding: 10px;
+	background: #666;
+	margin-top: 30px;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+  background-image: url(...)
+	
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+/* Paste this css to your style sheet file or under head tag */
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(https://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif) center no-repeat #fff;
+}
